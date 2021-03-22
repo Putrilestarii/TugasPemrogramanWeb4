@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"> // memanggil jquery library
+</script> 
+<script type="text/javascript">
+$(document).ready(function(){ // menampilkan baris kode jQuery yang akan dijalankan dan inisialisasi apabila semua elemen sudah ditampilkan di halaman web browser
+$(".sembunyi").click(function() {$("#foto").hide("slow")}); // menampilkan perintah sembunyi secara perlahan
+$(".tampil").click(function() {$("#foto").show("slow")}); // menampilkan perintah tampil secara perlahan
+$(".sembunyi1").click(function() {$("#foto1").hide("slow")}); // menampilkan perintah sembunyi secara perlahan
+$(".tampil1").click(function() {$("#foto1").show("slow")}); // menampilkan perintah tampil secara perlahan
+$(".sembunyi2").click(function() {$("#foto2").hide("slow")}); // menampilkan perintah sembunyi secara perlahan
+$(".tampil2").click(function() {$("#foto2").show("slow")}); // menampilkan perintah tampil secara perlahan
+
+});
+</script>
+</head>
+<body>
+<button class="sembunyi">Sembunyikan</button> <!-- menampilkan menu button sembunyikan -->
+<button class="tampil">Tampilkan</button> <!-- menampilkan menu button tampilkan -->
+<p><img id="foto" src="images/logo.png" width="200" height="200"></p> <!-- menampilkan gambar logo upn ukuran lebar 200 panjang 200 -->
+<br>
+<button class="sembunyi2">Sembunyikan</button> <!-- menampilkan menu button sembunyikan -->
+<button class="tampil2">Tampilkan</button> <!-- menampilkan menu button tampilkan -->
+<p><img id="foto1" src="images/ig.png" width="200" height="200"></p><!-- menampilkan gambar logo instagram ukuran lebar 200 panjang 200 -->
+<br>
+<button class="sembunyi3">Sembunyikan</button> <!-- menampilkan menu button sembunyikan -->
+<button class="tampil3">Tampilkan</button> <!-- menampilkan menu button tampilkan -->
+<p><img id="foto2" src="images/face.png" width="200" height="200"></p> <!-- menampilkan gambar logo facebook ukuran lebar 200 panjang 200 -->
+</body>
+</html>

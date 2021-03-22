@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"> // memanggil jquery library
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){ // menampilkan baris kode jQuery yang akan dijalankan dan inisialisasi apabila semua elemen sudah ditampilkan di halaman web browser
+		$("#daftar").addClass("merahkuning"); // menggunakan selektor tag dengan langsung menyebut nama tag elemennya yaitu menggunakan class #daftar
+		$(".subdaftar").addClass("kuninghitam");}); // menggunakan selektor tag dengan langsung menyebut nama tag elemennya yaitu menggunakan class #subdaftar
+	</script>
+	<style type="text/css">
+		.merahkuning {
+			color: red; 
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam {
+			color: blue;
+			background-color: green;
+		}
+	</style> <!-- menampilkan paragraf dengan list item menggunakan style css dengan 2 class. class #daftar teks warna merah, cetak tebal, Warna background kuning, jarak 3px. class #subdaftar teks warna biru, warna background hijau -->
+</head> 
+<body>
+	<div>
+		<p>Paragraf Pertama</p> <!-- menampilkan tulisan paragraf pertama-->
+	</div>
+	</div>
+	<div>
+		<ul id="daftar"> <!-- manampilkan ul id daftar dengan list item-->
+			<li>Item 1</li> <!-- menampilkan list item 1-->
+			<li class="subdaftar">Item 2</li> <!-- menampilkan list item 2 dengan class subdaftar -->
+			<li>Item 3</li> <!-- menampilkan list item 3 -->
+		</ul>
+	</div>
+</body>
+</html>

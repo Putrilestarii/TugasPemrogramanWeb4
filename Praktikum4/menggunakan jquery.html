@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.6.0.min.js"> // memanggil jquery library
+	</script> 
+	<script type="text/javascript">
+		$(document).ready(function(){ // menampilkan baris kode jQuery yang akan dijalankan dan inisialisasi apabila semua elemen sudah ditampilkan di halaman web browser
+			$(".sembunyi").click(function() {$("#foto").hide("slow")}); //memilih elemen berdasarkan class atau id dengan memberikan aksi/operasi terhadap event yang dipilih  seperti tombol click(memilih) dan effect hide(menyembunyikan)
+			$(".tampil").click(function() {$("#foto").show("slow")}); //memilih elemen berdasarkan class  atau id dengan memberikan aksi/operasi terhadap event yang dipilih  seperti tombol click(memiliih) dan effect show (menampilkan)
+		});
+	</script>
+</head>
+<body>
+	<button class="sembunyi">Sembunyikan</button> <!-- menampilkan menu button sembunyikan -->
+	<button class="tampil">Tampilkan</button> <!-- menampilkan menu button tampilkan -->
+	<p><img id="foto" src="images/logo.png" width="200" height="200"></p> <!-- menampilkan paragraf yang menampilkan gambar logo upn dengan ukuran panjang 200 lebar 200 -->
+</body>
+</html>

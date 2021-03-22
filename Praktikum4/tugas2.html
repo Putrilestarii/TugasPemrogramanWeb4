@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="jquery-3.6.0.min.js">// Memanggil library jquery
+</script>
+<script type="text/javascript">
+	$(document).ready(function() { // menampilkan baris kode jQuery yang akan dijalankan dan inisialisasi apabila semua elemen sudah ditampilkan di halaman web browser
+		$("#box1").dblclick(function() { // menampilkan elemen box1 dengan event dobel klik
+			$(".satu").css({ // menampilkan selektor class satu
+				'background-color' :'red' // menampilkan warna merah jika di klik 2x
+			});
+		});
+	    $("#box2").dblclick(function() { // menampilkan elemen box2 dengan event dobel klik
+			$(".dua").css({ // Elemen selector class dua
+				'background-color' :'pink' // menampilkan warna pink jika diklik 2x
+			});
+		});
+		$("#box3").dblclick(function() { // menampilkan elemen box3 dengan event dobel klik
+			$(".tiga").css({ // Elemen selector class tiga
+				'background-color' :'blue' // menampilkan warna biru jika diklik 2x
+			});
+		});
+		$("#box4").dblclick(function() { // menampilkan elemen box3 dengan event dobel klik
+			$(".empat").css({ // Elemen selector class empat
+				'background-color' :'green' // menampilkan warna hijau jika diklik 2x
+			});
+		});
+	});
+</script>
+<style>
+	div{
+		width: 100px;
+		height: 100px;
+		border-style: black;
+		border-color: yellow;
+		background-color: yellow;
+		margin-left: 15px;
+		float: left; 
+	}
+	.satu{
+		border-radius: 0px; 
+	}
+	.dua{
+		border-radius: 0px;
+	}
+	.tiga{
+		border-radius: 0px;
+	}
+	.empat{
+		border-radius: 0px;
+	}
+</style> <!-- menampilkan style css dari kotak dengan lebar 100px, panjang 100px, borderstyle hitam, warna kuning, margin left 15px, float left, serta border radius box 1 2 3 4  -->
+</head>
+<body>
+	<p>Klik 2x pada setiap kotak untuk mengubah warnanya</p> <!-- menampilkan teks -->
+    <div id= "box1" class="satu"></div><!-- menampilkan box1 -->
+    <div id= "box2" class="dua"></div><!-- menampilkan box2 -->
+    <div id= "box3" class="tiga"></div><!-- menampilkan box3 -->
+    <div id= "box4" class="empat"></div><!-- menampilkan box4 -->
+</body>
+</html>
